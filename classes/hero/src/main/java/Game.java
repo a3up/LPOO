@@ -1,3 +1,5 @@
+import com.googlecode.lanterna.TextColor;
+import com.googlecode.lanterna.graphics.TextGraphics;
 import com.googlecode.lanterna.input.KeyStroke;
 import com.googlecode.lanterna.input.KeyType;
 import com.googlecode.lanterna.screen.Screen;
@@ -9,7 +11,7 @@ import java.io.IOException;
 
 public class Game {
     private Screen screen;
-    private Arena arena = new Arena(30, 20);
+    private Arena arena = new Arena(40, 12);
 
     public Game() throws IOException {
         Terminal terminal = new DefaultTerminalFactory().createTerminal();
@@ -25,7 +27,7 @@ public class Game {
 
     private void draw() throws IOException {
         this.screen.clear();
-        this.arena.draw(screen);
+        this.arena.draw(this.screen.newTextGraphics());
         this.screen.refresh();
     }
 

@@ -1,5 +1,8 @@
+import com.googlecode.lanterna.TerminalPosition;
+import com.googlecode.lanterna.TerminalSize;
+import com.googlecode.lanterna.TextColor;
+import com.googlecode.lanterna.graphics.TextGraphics;
 import com.googlecode.lanterna.input.KeyStroke;
-import com.googlecode.lanterna.screen.Screen;
 
 public class Arena {
     int width;
@@ -12,11 +15,9 @@ public class Arena {
     }
 
     private boolean canHeroMove(Position position) {
-        if(position.getX() < 0 || position.getX() > this.width)
+        if (position.getX() < 0 || position.getX() >= this.width)
             return false;
-        if(position.getY() < 0 || position.getY() > this.height)
-            return false;
-        return true;
+        return position.getY() >= 0 && position.getY() < this.height;
     }
 
     private void moveHero(Position position) {
@@ -45,7 +46,9 @@ public class Arena {
         }
     }
 
-    public void draw(Screen screen) {
-        this.hero.draw(screen);
+    public void draw(TextGraphics graphics) {
+        graphics.setBackgroundColor(TextColor.Factory.fromString("#336699"));
+        graphics.fillRectangle(new TerminalPosition(0, 0), new TerminalSize(width, height), ' ');
+        this.hero.draw(graphics);
     }
 }
