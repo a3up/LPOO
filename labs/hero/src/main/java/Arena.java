@@ -21,6 +21,7 @@ public class Arena {
         this.height = height;
         this.walls = createWalls();
         this.coins = createCoins();
+        this.monsters = createMonsters();
     }
 
     private List<Wall> createWalls() {
@@ -68,8 +69,8 @@ public class Arena {
             int y = random.nextInt(height - 2) + 1;
             boolean used = false;
             if (this.hero.getPosition().getX() == x && this.hero.getPosition().getY() == y)
-                continue;   
-            for (Monster m : this.monsters)
+                continue;
+            for (Monster m : monsters)
                 if (m.getPosition().getX() == x && m.getPosition().getY() == y) {
                     used = true;
                     break;
@@ -113,8 +114,20 @@ public class Arena {
     }
 
     private void moveMonsters() {
+        for (Monster monster : this.monsters) {
+            Position aux;
+            do
+                aux = monster.move();
+            while (!canHeroMove(aux));
+            monster.setPosition(aux);
+        }
+    }
+
+    public boolean verifyMonsterCollisions() {
         for (Monster monster : this.monsters)
-            monster.setPosition(monster.move());
+            if (monster.getPosition().equals(hero.getPosition()))
+                return true;
+        return false;
     }
 
     public void processKey(KeyStroke key) {
@@ -140,10 +153,12 @@ public class Arena {
     }
 
     public void draw(TextGraphics graphics) {
-        graphics.setBackgroundColor(TextColor.Factory.fromString("#fff"));
+        graphics.setBackgroundColor(TextColor.Factory.fromString("#FFFFFF"));
         graphics.fillRectangle(new TerminalPosition(0, 0), new TerminalSize(width, height), ' ');
         for (Coin coin : this.coins)
             coin.draw(graphics);
+        for (Monster monster : this.monsters)
+            monster.draw(graphics);
         this.hero.draw(graphics);
         for (Wall wall : this.walls)
             wall.draw(graphics);

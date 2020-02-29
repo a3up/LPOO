@@ -37,7 +37,10 @@ public class Game {
             draw();
             key = this.screen.readInput();
             processKey(key);
+            if (this.arena.verifyMonsterCollisions())
+                break;
         } while (key.getKeyType() != KeyType.EOF && (key.getKeyType() != KeyType.Character || key.getCharacter() != 'q'));
         this.screen.close();
+        System.out.print("Game over!");
     }
 }
