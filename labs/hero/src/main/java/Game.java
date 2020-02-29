@@ -39,6 +39,8 @@ public class Game {
             processKey(key);
             if (this.arena.verifyMonsterCollisions())
                 break;
+            if (!this.arena.verifyRemainingCoins())
+                break;
         } while (key.getKeyType() != KeyType.EOF && (key.getKeyType() != KeyType.Character || key.getCharacter() != 'q'));
         this.screen.close();
         System.out.print("Game over!");

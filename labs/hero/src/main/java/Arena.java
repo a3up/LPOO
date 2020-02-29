@@ -130,6 +130,10 @@ public class Arena {
         return false;
     }
 
+    public boolean verifyRemainingCoins() {
+        return !this.coins.isEmpty();
+    }
+
     public void processKey(KeyStroke key) {
         switch (key.getKeyType()) {
             case ArrowUp: {
