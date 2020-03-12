@@ -30,7 +30,7 @@ public class TestCases {
     private void isAbstract(Class<?> c) {
         assertTrue(Modifier.isAbstract(c.getModifiers()));
     }
-    
+
     @Test
     public void testEvent() {
         Event e = new Event("ENEI");
