@@ -1,15 +1,20 @@
-public class Circle extends Shape {
-    private float radius;
+public class Circle implements AreaShape {
+    private double radius;
 
-    public Circle(float radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 
-    public float getRadius() {
+    public double getRadius() {
         return radius;
     }
 
-    public void setRadius(float radius) {
+    public void setRadius(double radius) {
         this.radius = radius;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI * Math.pow(this.radius, 2);
     }
 }

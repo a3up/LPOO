@@ -1,22 +1,18 @@
 import java.util.List;
 import java.util.ArrayList;
 
-public class AreaAggregator {
-    private List<Shape> shapes = new ArrayList<>();
+public class AreaAggregator implements SumProvider {
+    private List<HasArea> shapes = new ArrayList<>();
 
-    public void addShape(Shape shape) {
+    public void addShape(HasArea shape) {
         shapes.add(shape);
     }
 
+    @Override
     public double sum() {
         double sum = 0;
-        for (Shape shape : shapes) {
-            if (shape.getClass().equals(Circle.class)) {
-                sum += Math.PI * Math.pow(((Circle) shape).getRadius(), 2);
-            } else if (shape.getClass().equals(Square.class)) {
-                sum += Math.pow(((Square) shape).getSide(), 2);
-            }
-        }
+        for (HasArea shape : shapes)
+            sum += shape.getArea();
         return sum;
     }
 }

@@ -1,15 +1,20 @@
-public class Square extends Shape {
-    private float side;
+public class Square implements AreaShape {
+    private double side;
 
-    public Square(float side) {
+    public Square(double side) {
         this.side = side;
     }
 
-    public float getSide() {
+    public double getSide() {
         return side;
     }
 
-    public void setSide(float side) {
+    public void setSide(double side) {
         this.side = side;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.pow(this.side, 2);
     }
 }
