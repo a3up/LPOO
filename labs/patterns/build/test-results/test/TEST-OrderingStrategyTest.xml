@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OrderingStrategyTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-03-26T19:59:36" hostname="manjaro" time="0.003">
+  <properties/>
+  <testcase name="impatientStrategy" classname="OrderingStrategyTest" time="0.001"/>
+  <testcase name="smartStrategyStartClosed" classname="OrderingStrategyTest" time="0.001"/>
+  <testcase name="smartStrategyStartOpened" classname="OrderingStrategyTest" time="0.001"/>
+  <testcase name="orderStringRecipe" classname="OrderingStrategyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
