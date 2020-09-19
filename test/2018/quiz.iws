@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b435420-c662-432d-9308-eb90bd7ac2cd" name="Default Changelist" comment="" />
+    <list default="true" id="9b435420-c662-432d-9308-eb90bd7ac2cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../labs/minesweeper/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/build/classes/java/main/com/aor/refactoring/example4/Supervisor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/build/classes/java/main/com/aor/refactoring/example4/Supervisor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/build/classes/java/main/com/aor/refactoring/example5/Turtle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/build/classes/java/main/com/aor/refactoring/example5/Turtle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/build/reports/tests/test/classes/com.aor.refactoring.example4.WorkerTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/build/reports/tests/test/packages/com.aor.refactoring.example4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/build/test-results/test/TEST-com.aor.refactoring.example4.WorkerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/refactoring/src/main/java/com/aor/refactoring/example5/Turtle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../labs/refactoring/src/main/java/com/aor/refactoring/example5/Turtle.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +53,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -42,7 +61,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553520726322" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2016" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -178,22 +197,22 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="466" y="156" width="424" height="482" key="FileChooserDialogImpl/0.28.1366.740@0.28.1366.740" timestamp="1583924686709" />
-    <state width="1316" height="173" key="GridCell.Tab.0.bottom" timestamp="1583924686721">
+    <state width="1316" height="173" key="GridCell.Tab.0.bottom" timestamp="1592043767711">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1316" height="173" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1583924686721" />
-    <state width="1316" height="173" key="GridCell.Tab.0.center" timestamp="1583924686720">
+    <state width="1316" height="173" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1592043767711" />
+    <state width="1316" height="173" key="GridCell.Tab.0.center" timestamp="1592043767711">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1316" height="173" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1583924686720" />
-    <state width="1316" height="173" key="GridCell.Tab.0.left" timestamp="1583924686720">
+    <state width="1316" height="173" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1592043767711" />
+    <state width="1316" height="173" key="GridCell.Tab.0.left" timestamp="1592043767711">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1316" height="173" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1583924686720" />
-    <state width="1316" height="173" key="GridCell.Tab.0.right" timestamp="1583924686721">
+    <state width="1316" height="173" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1592043767711" />
+    <state width="1316" height="173" key="GridCell.Tab.0.right" timestamp="1592043767711">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1316" height="173" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1583924686721" />
+    <state width="1316" height="173" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1592043767711" />
     <state x="346" y="89" key="search.everywhere.popup" timestamp="1583921153043">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
